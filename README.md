@@ -1,27 +1,21 @@
-# Flathub
+# Blockstream Green
 
-Flathub is the central place for building and hosting Flatpak builds.
+This repo hosts the flatpak version of [Blockstream Green](https://github.com/blockstream/green_qt).
 
-Using the Flathub repository
+Blockstream Green is an industry-leading Bitcoin wallet that offers you an unrivaled blend of security and ease-of-use.
+
+Installing
 ----------------------------
 
-To install applications that are hosted on Flathub, use the following:
+To install Blockstream Green from Flathub, use the following:
 ```
 flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.gnome.Recipes
+flatpak install flathub com.blockstream.Green
 ```
 
-To install applications from the beta branch, use the following:
-```
-flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-flatpak install flathub-beta org.godotengine.Godot
-```
-
-For more information and more applications see https://flathub.org
-
-Contributing to Flathub
+Issue Reporting
 -----------------------
+**Please only report issues in this repo that are specific to the flatpak version.**
 
-For information on creating packages or reporting issues please see the [contributing page](/CONTRIBUTING.md).
-
-***Note:*** *this repository is not for reporting issues related to the flathub.org website itself or contributing to its development. For that, go to https://github.com/flathub/website*
+Issues that can be replicated in a stable release should be reported in the [upstream repo](https://github.com/blockstream/green_qt).
+Make sure that the reported issue is **not** flatpak-related.
