@@ -4,7 +4,7 @@
   
   <name>Blockstream Green</name>
   
-  <summary>A simple and secure Bitcoin and Liquid Network wallet.</summary>
+  <summary>A simple and secure Bitcoin and Liquid Network wallet</summary>
   
   <metadata_license>CC0-1.0</metadata_license>
   
@@ -29,19 +29,15 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="1.2.3" date="2023-06-29">
+	  <release version="1.2.5" date="2023-07-20">
 		  <description>
-			<p>Changed</p>
-				<ul>
-					<li>Bigger QR Codes to aid scanning with Jade</li>
-				</ul>
 			<p>Fixed</p>
 				<ul>
-					<li>Support temporary Recovery Phrase Login with Jade</li>
-					<li>Handle sign message error with Jade</li>
-					<li>Sending with minimum fee rate in Liquid singlesig wallets</li>
-					<li>Click on new version notification to open download page</li>
-					<li>Regression in analytics initialization</li>
+					<li>Fix crash on Jade initialization</li>
+				</ul>
+			<p>Added</p>
+				<ul>
+					<li>Redirect from wallets list to Jade view when selecting a Jade wallet</li>
 				</ul>
 		  </description>
 	  </release>
