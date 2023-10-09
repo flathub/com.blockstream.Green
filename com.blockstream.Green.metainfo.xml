@@ -29,17 +29,14 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="1.2.7" date="2023-09-11">
+	  <release version="1.2.8" date="2023-10-09">
 		  <description>
-			<p>Added</p>
-				<ul>
-					<li>Show fiat denominated amounts in transaction details dialog</li>
-				</ul>
 			<p>Fixed</p>
 				<ul>
-					<li>Faster login time on singlesig wallet</li>
-					<li>Autologout works as expected</li>
-					<li>Correctly update balances and transactions after login and restore</li>
+					<li>Regression on balance update</li>
+					<li>Duplicate entries in Transaction list</li>
+					<li>Fix a crash when using Jade with a custom pin server</li>
+					<li>Show correct firmware hash when updating Jade</li>
 				</ul>
 		  </description>
 	  </release>
