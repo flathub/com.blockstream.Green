@@ -31,26 +31,24 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.1" date="2024-3-05">
+	  <release version="2.0.2" date="2024-3-13">
 		  <description>
 			<p>Added</p>
 				<ul>
-					<li>Manual coin selection for L-BTC</li>
-					<li>List relevant accounts in the assets details</li>
-					<li>Filter for non-confidential coins</li>
+					<li>Button to clear address field</li>
 				</ul>
 			<p>Changed</p>
 				<ul>
-					<li>Adjust scanning for Jade device frequency</li>
+					<li>Improved onboarding flow</li>
+					<li>Improments in the Watch-Only login view</li>
+					<li>Reinstate 2FA reset notification and request/cancel options</li>
+					<li>Add general section in app settings</li>
+					<li>Update GDK to 0.70.3</li>
 				</ul>
 			<p>Fixed</p>
 				<ul>
-					<li>Preserve transaction memo on increase transaction speed</li>
-					<li>Fixed watch-only login on Liquid</li>
-					<li>Fix busy indicator of primary buttons</li>
-					<li>Restore with QR Code while some words are filled</li>
-					<li>Avoid slow application quit</li>
-					<li>Layout of manual coin selection view</li>
+					<li>Crash on login when Ledger device is idle</li>
+					<li>Incorrect negative balance</li>
 				</ul>
 		  </description>
 	  </release>
