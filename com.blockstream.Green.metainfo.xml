@@ -31,24 +31,17 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.2" date="2024-3-13">
+	  <release version="2.0.3" date="2024-3-28">
 		  <description>
 			<p>Added</p>
 				<ul>
-					<li>Button to clear address field</li>
-				</ul>
-			<p>Changed</p>
-				<ul>
-					<li>Improved onboarding flow</li>
-					<li>Improments in the Watch-Only login view</li>
-					<li>Reinstate 2FA reset notification and request/cancel options</li>
-					<li>Add general section in app settings</li>
-					<li>Update GDK to 0.70.3</li>
+					<li>Notice when Jade is configured with a custom oracle server</li>
+					<li>Show mismatch warning on the setup PIN view</li>
 				</ul>
 			<p>Fixed</p>
 				<ul>
-					<li>Crash on login when Ledger device is idle</li>
-					<li>Incorrect negative balance</li>
+					<li>Better GUI around login with Jade</li>
+					<li>Usage with Tor</li>
 				</ul>
 		  </description>
 	  </release>
