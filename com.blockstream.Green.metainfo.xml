@@ -39,7 +39,7 @@
 					<li>Handle external BIP21 payment on macOS and Windows</li>
 					<li>Support signing message with software wallet</li>
 				</ul>
-			<p>Changed</p
+			<p>Changed</p>
 				<ul>
 					<li>Updates Qt to 6.7.0</li>
 					<li>Updates GDK to 0.71.0</li>
