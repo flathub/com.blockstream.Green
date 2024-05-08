@@ -31,25 +31,19 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.4" date="2024-4-22">
+	  <release version="2.0.5" date="2024-5-8">
 		  <description>
 			<p>Added</p>
 				<ul>
-					<li>BIP39 passphrase login</li>
-					<li>Handle external BIP21 payment on macOS and Windows</li>
-					<li>Support signing message with software wallet</li>
-				</ul>
-			<p>Changed</p>
-				<ul>
-					<li>Updates Qt to 6.7.0</li>
-					<li>Updates GDK to 0.71.0</li>
+					<li>Add or import singlesig watch-only wallet</li>
+					<li>New watch-only section in wallet settings dialog</li>
+					<li>Expose extended public keys and output descriptors of singlesig accounts</li>
+					<li>Handle external BIP21 payment on Linux</li>
+					<li>Option to scramble login keypad</li>
 				</ul>
 			<p>Fixed</p>
 				<ul>
-					<li>QR Code for Authenticator app in Two-Factor authentication settings</li>
-					<li>Only show fee amount for redeposits</li>
-					<li>Sign Liquid transaction with Ledger Nano S</li>
-					<li>Show insufficient funds for fee error</li>
+					<li>Reinstate 2FA expire settings</li>
 				</ul>
 		  </description>
 	  </release>
