@@ -31,18 +31,14 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.6" date="2024-5-22">
+	  <release version="2.0.7" date="2024-6-11">
 		  <description>
 			<p>Changed</p>
 				<ul>
-					<li>Add QR unlock for Jade as an experimental feature (enable experimental features in app settings)</li>
-					<li>Improve QR Code scanning</li>
-				</ul>
-			<p>Fixed</p>
-				<ul>
-					<li>Do not disable send and receive buttons</li>
-					<li>Request camera permission when required</li>
-					<li>Application startup in macOS Sonoma</li>
+					<li>Setting to remember devices</li>
+					<li>Updates Qt to 6.7.1</li>
+					<li>Updates GDK to 0.71.3</li>
+					<li>Improved asset registry loading</li>
 				</ul>
 		  </description>
 	  </release>
