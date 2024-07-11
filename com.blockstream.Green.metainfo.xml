@@ -31,14 +31,21 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.7" date="2024-6-11">
+	  <release version="2.0.8" date="2024-7-11">
 		  <description>
+			<p>Added</p>
+				<ul>
+					<li>Flow to redeposit 2FA expired coins</li>
+					<li>Notification for 2FA expired coins</li>
+					<li>Notification for partial service outage</li>
+					<li>Expose status of wallet connections</li>
+					<li>Show banner for login alert</li>
+					<li>Show banner for system messages</li>
+					<li>Show banner for two factor expired outputs</li>
+				</ul>
 			<p>Changed</p>
 				<ul>
-					<li>Setting to remember devices</li>
-					<li>Updates Qt to 6.7.1</li>
-					<li>Updates GDK to 0.71.3</li>
-					<li>Improved asset registry loading</li>
+					<li>Updates Qt to 6.7.2</li>
 				</ul>
 		  </description>
 	  </release>
