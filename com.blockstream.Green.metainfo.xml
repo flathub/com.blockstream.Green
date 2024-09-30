@@ -31,12 +31,11 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.10" date="2024-9-6">
+	  <release version="2.0.12" date="2024-9-30">
 		  <description>
-			<p>Fixed</p>
-			  <ul>Login with singlesig watch-only</ul>
-			  <ul>Ensure the application is usable with a smaller window size</ul>
-			  <ul>Improve detection of Tor circuit</ul>
+			  <p>Changed</p>
+			    <ul>Improve address verification with Jade on redeposit</ul>
+			    <ul>Updates GDK to 0.73.1</ul>
 		  </description>
 	  </release>
   </releases>
