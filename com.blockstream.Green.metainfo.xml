@@ -31,11 +31,12 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.12" date="2024-9-30">
+	  <release version="2.0.15" date="2024-11-22">
 		  <description>
-			  <p>Changed</p>
-			    <ul>Improve address verification with Jade on redeposit</ul>
-			    <ul>Updates GDK to 0.73.1</ul>
+			  <p>Fixed</p>
+			    <ul>Layout of promo card in wallet overview</ul>
+			    <ul>Complete tracking of promo events</ul>
+			    <ul>Reset of analytics identifier</ul>
 		  </description>
 	  </release>
   </releases>
