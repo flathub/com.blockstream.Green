@@ -24,16 +24,16 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/Blockstream/green_qt/releases/download/release_2.0.15/BlockstreamGreen-linux-x86_64.tar.gz 
-        sha256: 82d533886355366ddf47593b63af4ef6d840342abd3c74530f24cf1ab147edea
+        url: https://github.com/Blockstream/green_qt/releases/download/release_2.0.16/BlockstreamGreen-linux-x86_64.tar.gz 
+        sha256: da01e366680a4e68fd76f8c0b9d46aa6181aecaaf9983c62696b200f241ac582
         strip-components: 0
 
       - type: file
-        url: https://github.com/Blockstream/green_qt/raw/release_2.0.15/assets/icons/green.png
+        url: https://github.com/Blockstream/green_qt/raw/release_2.0.16/assets/icons/green.png
         sha256: c5d093a7a630ed480aafeec91289f00150eb90423c2928f8a47b8db2d9440079
 
       - type: file
-        url: https://github.com/Blockstream/green_qt/raw/release_2.0.15/green.desktop
+        url: https://github.com/Blockstream/green_qt/raw/release_2.0.16/green.desktop
         sha256: 4fbac60cdf275ff7c5bbf3070f47f60b00b81e4d042a789cc68d2fbf79d74b09
 
       - type: file
