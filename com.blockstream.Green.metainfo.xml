@@ -33,13 +33,13 @@
   <releases>
 	  <release version="2.0.16" date="2024-12-26">
 		  <description>
-			  <p>Added:</p>
-			    <ul>Genuine check flow</ul>
-			  <p>Changed:</p>
-			    	<ul>Enhanced advertisement</ul>
-			    <ul>Updates GDK to 0.74.1</ul>
-			    <ul>The default fee rate is now the minimum relay fee rate</ul>
-			    <ul>Stable Jade firmware update</ul>
+			  <ul>Added</ul>
+			    <li>Genuine check flow</li>
+			  <ul>Changed</ul>
+			    	<li>Enhanced advertisement</li>
+			    <li>Updates GDK to 0.74.1</li>
+			    <li>The default fee rate is now the minimum relay fee rate</li>
+			    <li>Stable Jade firmware update</li>
 		  </description>
 	  </release>
   </releases>
