@@ -31,15 +31,26 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.16" date="2024-12-26">
+	  <release version="2.0.17" date="2025-01-13">
 		  <description>
-			  <p>Added:</p>
-			    <ul>Genuine check flow</ul>
-			  <p>Changed:</p>
-			    	<ul>Enhanced advertisement</ul>
-			    <ul>Updates GDK to 0.74.1</ul>
-			    <ul>The default fee rate is now the minimum relay fee rate</ul>
-			    <ul>Stable Jade firmware update</ul>
+			  <p>Added</p>
+			    <ul>
+			      <li>Graphical assets for Jade Plus</li>
+			      <li>Support video promo on Linux</li>
+			      <li>Show total spent amount in transaction details</li>
+			    </ul>
+			  <p>Changed</p>
+			    <ul>
+			    	  <li>The default fee rate is now the 24 block fee rate estimate</li>
+			      <li>Match address display format in Jade address verification flow</li>
+			      <li>Updates Qt to 6.8.1</li>
+          </ul>
+        <p>Fixed</p>
+          <ul>
+            <li>Display an error when the change output is dust in send flow</li>
+            <li>Aspect ratio of promo videos</li>
+            <li>Minor UI improvements</li>
+          </ul>
 		  </description>
 	  </release>
   </releases>
