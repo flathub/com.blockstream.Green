@@ -31,7 +31,7 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.17" date="2025-01-13">
+	  <release version="2.0.18" date="2025-01-23">
 		  <description>
         <p>Fixed</p>
           <ul>
