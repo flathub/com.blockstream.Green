@@ -31,12 +31,15 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.18" date="2025-01-23">
+	  <release version="2.0.20" date="2025-02-04">
 		  <description>
+        <p>Added</p>
+          <ul>
+            <li>Enable Liquid discounted fees for Confidential Transactions</li>
+          </ul>
         <p>Fixed</p>
           <ul>
-            <li>Revert Qt to 6.8.0 to fix crash on macOS Intel</li>
-            <li>Prevent overflow of unit selector</li>
+            <li>Disable transaction notes in watch-only</li>
           </ul>
 		  </description>
 	  </release>
