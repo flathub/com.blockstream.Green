@@ -31,24 +31,16 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.21" date="2025-03-11">
+	  <release version="2.0.22" date="2025-03-24">
 		  <description>
         <p>Added</p>
           <ul>
-            <li>Crash reporting</li>
-          </ul>
-        <p>Changed</p>
-          <ul>
-            <li>Only check firmware for the connected Jade</li>
-            <li>Liquid Bitcoin ticker to LBTC</li>
-            <li>Updates translations</li>
-            <li>Updates GDK to 0.74.3</li>
-            <li>Updates Qt to 6.8.2</li>
+            <li>Option to request an email containing the user’s nLockTime transactions</li>
           </ul>
         <p>Fixed</p>
           <ul>
-            <li>Prevent invalid transaction creation under slow networking</li>
-            <li>Available amount displayed after manual coin selection</li>
+            <li>Image size when a new Jade device is detected</li>
+            <li>Correct location of crash reports on macOS and Linux</li>
           </ul>
 		  </description>
 	  </release>
