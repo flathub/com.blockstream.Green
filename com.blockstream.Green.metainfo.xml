@@ -31,16 +31,12 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.22" date="2025-03-24">
+	  <release version="2.0.23" date="2025-03-28">
 		  <description>
-        <p>Added</p>
-          <ul>
-            <li>Option to request an email containing the user’s nLockTime transactions</li>
-          </ul>
         <p>Fixed</p>
           <ul>
-            <li>Image size when a new Jade device is detected</li>
-            <li>Correct location of crash reports on macOS and Linux</li>
+            <li>Correct amount parsing when sending a Liquid asset</li>
+            <li>Prevent a crash when the wallet logouts and a balance refresh was about to occur</li>
           </ul>
 		  </description>
 	  </release>
