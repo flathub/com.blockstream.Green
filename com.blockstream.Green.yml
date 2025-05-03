@@ -34,7 +34,7 @@ modules:
 
       - type: file
         url: https://github.com/Blockstream/green_qt/raw/release_2.0.25/green.desktop
-        sha256: 4fbac60cdf275ff7c5bbf3070f47f60b00b81e4d042a789cc68d2fbf79d74b09
+        sha256: c8d444b28b86225435e85af48a6a264b90d4c66e0cc45f9473fadb54bc72190b
 
       - type: file
         path: com.blockstream.Green.metainfo.xml
