@@ -31,12 +31,15 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.23" date="2025-03-28">
+	  <release version="2.0.25" date="2025-04-24">
 		  <description>
-        <p>Fixed</p>
+        <p>Changed</p>
           <ul>
-            <li>Correct amount parsing when sending a Liquid asset</li>
-            <li>Prevent a crash when the wallet logouts and a balance refresh was about to occur</li>
+            <li>Update GDK to 0.75.1</li>
+          </ul>
+        <p>Fixes</p>
+          <ul>
+            <li>Amount parsing when changing from fiat denomination to Liquid asset</li>
           </ul>
 		  </description>
 	  </release>
