@@ -31,15 +31,17 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.25" date="2025-04-24">
+	  <release version="2.0.26" date="2025-07-10">
 		  <description>
         <p>Changed</p>
           <ul>
-            <li>Update GDK to 0.75.1</li>
+            <li>Green is now Blockstream App, application style is updated to match the rebrand</li>
+            <li>Hardware wallet promo segmentation</li>
           </ul>
         <p>Fixes</p>
           <ul>
-            <li>Amount parsing when changing from fiat denomination to Liquid asset</li>
+            <li>Child process must receive --datadir form the parent process</li>
+            <li>Prevent opening multiple settings dialogs</li>
           </ul>
 		  </description>
 	  </release>
