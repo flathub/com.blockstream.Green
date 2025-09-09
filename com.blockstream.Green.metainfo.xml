@@ -31,17 +31,19 @@
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
   <releases>
-	  <release version="2.0.26" date="2025-07-10">
+	  <release version="2.0.28" date="2025-08-06">
 		  <description>
         <p>Changed</p>
           <ul>
-            <li>Green is now Blockstream App, application style is updated to match the rebrand</li>
-            <li>Hardware wallet promo segmentation</li>
+            <li>Update GDK to 0.75.2</li>
+            <li>Update crashpad</li>
           </ul>
         <p>Fixes</p>
           <ul>
-            <li>Child process must receive --datadir form the parent process</li>
-            <li>Prevent opening multiple settings dialogs</li>
+            <li>Ensure that the legacy uninstalled on Windows works as expected</li>
+            <li>Fix the type label for not unblindable transaction</li>
+            <li>Prevent crash during transactions update</li>
+            <li>Prevent crash when changing a transaction note</li>
           </ul>
 		  </description>
 	  </release>
