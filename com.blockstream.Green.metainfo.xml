@@ -26,6 +26,9 @@
     <p>
     Built by one of the most respected teams in the Bitcoin industry, Blockstream Green is supported across multiple platforms and is designed for Bitcoin beginners and power users alike.
     </p>
+    <p>
+    Note: The Flatpak build is currently not being updated. For the latest version, please download the AppImage from the GitHub Releases page.
+    </p>
   </description>
   
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>

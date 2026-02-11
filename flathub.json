@@ -1,3 +1,4 @@
 {
-  "only-arches": ["x86_64"]
+  "only-arches": ["x86_64"],
+  "end-of-life": "The Flatpak build is temporarily not being updated. Please download the latest version from the AppImage: https://github.com/Blockstream/green_qt/releases"
 }
