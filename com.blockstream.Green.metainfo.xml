@@ -30,6 +30,7 @@
   
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
+  <url type="vcs-browser">https://github.com/blockstream/green_qt</url>
   <releases>
 	  <release version="3.0.1" date="2026-01-27">
 		  <description>
@@ -55,7 +56,8 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://blog.blockstream.com/content/images/size/w2000/2024/02/Green-2.0.png</image>
+      <image>https://blog.blockstream.com/content/images/size/w1000/2026/01/App_Desktop_3.0.0.jpg</image>
+      <caption>Main wallet overview</caption>
     </screenshot>
   </screenshots>
 </component>
