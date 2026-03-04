@@ -17,24 +17,21 @@ modules:
   - name: green
     buildsystem: simple
     build-commands:
-      - install -D blockstream ${FLATPAK_DEST}/bin/blockstream
-      - desktop-file-install --dir ${FLATPAK_DEST}/share/applications blockstream.desktop 
-      - install -Dm644 linux_production.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/linux_production.png
+      - chmod +x Blockstream-x86_64.AppImage
+      - ./Blockstream-x86_64.AppImage --appimage-extract
+      - cp -a squashfs-root/usr/* ${FLATPAK_DEST}/
       - install -Dm644 com.blockstream.Green.metainfo.xml ${FLATPAK_DEST}/share/metainfo/com.blockstream.Green.metainfo.xml
 
     sources:
-      - type: archive
-        url: https://github.com/Blockstream/green_qt/releases/download/release_2.0.28/Blockstream-linux-x86_64.tar.gz 
-        sha256: 29ec28d3ae308b2da3311aaba8ffbe6b2fb3ada1f59a368ae22f8cee3b9fa9b1
-        strip-components: 0
-
       - type: file
-        url: https://github.com/Blockstream/green_qt/raw/release_2.0.28/assets/icons/linux_production.png
-        sha256: 470ede780a248b38161ef0ffdb2a4a87efb6aedcdf8a1cfe17b3b2cf32275bce
-
-      - type: file
-        url: https://github.com/Blockstream/green_qt/raw/release_2.0.28/blockstream.desktop
-        sha256: c8180ffdedaea497fa3103f974c66dfbf60a471c3f1692f21b6a8c61f4807f72
+        url: https://github.com/Blockstream/green_qt/releases/download/release_3.0.1/Blockstream-x86_64.AppImage
+        sha256: fe1f1652d646caff7b8f4b4d6983aa5f8b919cd5998c2b4b6f3de38747b9c4f7
+        dest-filename: Blockstream-x86_64.AppImage
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/Blockstream/green_qt/releases/latest
+          url-query: .assets[] | select(.name=="Blockstream-x86_64.AppImage") | .browser_download_url
+          version-query: .tag_name | sub("^release_"; "")
 
       - type: file
         path: com.blockstream.Green.metainfo.xml

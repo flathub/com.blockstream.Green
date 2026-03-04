@@ -30,28 +30,34 @@
   
   <launchable type="desktop-id">com.blockstream.Green.desktop</launchable>
   <url type="homepage">https://blockstream.com/green</url>
+  <url type="vcs-browser">https://github.com/blockstream/green_qt</url>
   <releases>
-	  <release version="2.0.28" date="2025-08-06">
+	  <release version="3.0.1" date="2026-01-27">
 		  <description>
+        <p>Added</p>
+        <ul>
+          <li>Buy events</li>
+        </ul>
         <p>Changed</p>
-          <ul>
-            <li>Update GDK to 0.75.2</li>
-            <li>Update crashpad</li>
-          </ul>
+        <ul>
+          <li>Improved send flow when the wallet does not have liquid assets</li>
+          <li>Better look and feel consistency of some controls</li>
+        </ul>
         <p>Fixes</p>
-          <ul>
-            <li>Ensure that the legacy uninstalled on Windows works as expected</li>
-            <li>Fix the type label for not unblindable transaction</li>
-            <li>Prevent crash during transactions update</li>
-            <li>Prevent crash when changing a transaction note</li>
-          </ul>
+        <ul>
+          <li>Amounts when exporting transactions to CSV file</li>
+          <li>Load all transactions of a watchonly wallet</li>
+          <li>Exclude archived accounts to compute total wallet balance</li>
+          <li>Crash during application quit</li>
+        </ul>
 		  </description>
 	  </release>
   </releases>
 
   <screenshots>
     <screenshot type="default">
-      <image>https://blog.blockstream.com/content/images/size/w2000/2024/02/Green-2.0.png</image>
+      <image>https://blog.blockstream.com/content/images/size/w1000/2026/01/App_Desktop_3.0.0.jpg</image>
+      <caption>Main wallet overview</caption>
     </screenshot>
   </screenshots>
 </component>
