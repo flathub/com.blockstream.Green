@@ -32,6 +32,9 @@
   <url type="homepage">https://blockstream.com/green</url>
   <url type="vcs-browser">https://github.com/blockstream/green_qt</url>
   <releases>
+	  <release version="3.1.0" date="2026-03-04">
+	 	 	 <description></description>
+	  </release>
 	  <release version="3.0.1" date="2026-01-27">
 		  <description>
         <p>Added</p>

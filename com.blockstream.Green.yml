@@ -13,7 +13,7 @@ finish-args:
   - --share=ipc
   - --device=all
 
-modules: 
+modules:
   - name: green
     buildsystem: simple
     build-commands:
@@ -24,8 +24,8 @@ modules:
 
     sources:
       - type: file
-        url: https://github.com/Blockstream/green_qt/releases/download/release_3.0.1/Blockstream-x86_64.AppImage
-        sha256: fe1f1652d646caff7b8f4b4d6983aa5f8b919cd5998c2b4b6f3de38747b9c4f7
+        url: https://github.com/Blockstream/green_qt/releases/download/release_3.1.0/Blockstream-x86_64.AppImage
+        sha256: cca280621c0b0938d95dba2c30dcb7ea23ec8530a8a8579f18f4b3bbfd796c1b
         dest-filename: Blockstream-x86_64.AppImage
         x-checker-data:
           type: json
