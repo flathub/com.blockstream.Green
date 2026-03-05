@@ -32,6 +32,31 @@
   <url type="homepage">https://blockstream.com/green</url>
   <url type="vcs-browser">https://github.com/blockstream/green_qt</url>
   <releases>
+	  <release version="3.1.0" date="2026-03-04">
+	 	 	 <description>
+        <p>Added</p>
+        <ul>
+          <li>Receive Liquid Bitcoin via Lightning</li>
+          <li>Pay Lightning invoice with Liquid Bitcoin</li>
+          <li>Swap Bitcoin and Liquid Bitcoin</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>Show 2FA options for existing multisig sessions</li>
+          <li>Jade genuine check improvements with dedicated drawer</li>
+          <li>Updated onboarding flow</li>
+          <li>Updated GDK to 0.76.3</li>
+          <li>Updated kdsingleapplication to 1.2.0</li>
+          <li>Improvements in build scripts</li>
+        </ul>
+        <p>Fixes</p>
+        <ul>
+          <li>Check version of the installed Visual C++ Redistributable package</li>
+          <li>Fixed several runtime execution warnings</li>
+          <li>Fix pay BIP21 flow</li>
+        </ul>
+       </description>
+	  </release>
 	  <release version="3.0.1" date="2026-01-27">
 		  <description>
         <p>Added</p>
