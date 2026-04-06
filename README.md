@@ -1,13 +1,13 @@
-# Blockstream Green
+# Blockstream
 
-This repo hosts the flatpak version of [Blockstream Green](https://github.com/blockstream/green_qt).
+This repo hosts the flatpak version of [Blockstream](https://github.com/blockstream/green_qt).
 
-Blockstream Green is an industry-leading Bitcoin wallet that offers you an unrivaled blend of security and ease-of-use.
+Blockstream is an industry-leading Bitcoin wallet that offers you an unrivaled blend of security and ease-of-use.
 
 Installing
 ----------------------------
 
-To install Blockstream Green from Flathub, use the following:
+To install Blockstream from Flathub, use the following:
 ```
 flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub com.blockstream.Green
