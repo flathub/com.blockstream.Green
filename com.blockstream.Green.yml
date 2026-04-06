@@ -14,7 +14,14 @@ finish-args:
   - --device=all
 
 modules:
-  - name: green
+  - name: xcb-util-cursor
+    buildsystem: autotools
+    sources:
+      - type: archive
+        url: https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.5.tar.gz
+        sha256: 0e9c5446dc6f3beb8af6ebfcc9e27bcc6da6fe2860f7fc07b99144dfa568e93b
+
+  - name: blockstream
     buildsystem: simple
     build-commands:
       - chmod +x Blockstream-x86_64.AppImage
@@ -24,8 +31,8 @@ modules:
 
     sources:
       - type: file
-        url: https://github.com/Blockstream/green_qt/releases/download/release_3.1.0/Blockstream-x86_64.AppImage
-        sha256: cca280621c0b0938d95dba2c30dcb7ea23ec8530a8a8579f18f4b3bbfd796c1b
+        url: https://github.com/Blockstream/green_qt/releases/download/release_3.2.0/Blockstream-x86_64.AppImage
+        sha256: 05373eb4e815ad3a8a7c7172ab1001e74025d97e6c953ae50db241cd151aef7a
         dest-filename: Blockstream-x86_64.AppImage
         x-checker-data:
           type: json

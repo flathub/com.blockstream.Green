@@ -2,7 +2,7 @@
 <component type="desktop-application">
   <id>com.blockstream.Green</id>
   
-  <name>Blockstream Green</name>
+  <name>Blockstream</name>
   
   <summary>A simple and secure Bitcoin and Liquid Network wallet</summary>
 
@@ -24,7 +24,7 @@
   
   <description>
     <p>
-    Built by one of the most respected teams in the Bitcoin industry, Blockstream Green is supported across multiple platforms and is designed for Bitcoin beginners and power users alike.
+    Built by one of the most respected teams in the Bitcoin industry, Blockstream App is supported across multiple platforms and is designed for Bitcoin beginners and power users alike.
     </p>
   </description>
   
@@ -32,6 +32,37 @@
   <url type="homepage">https://blockstream.com/green</url>
   <url type="vcs-browser">https://github.com/blockstream/green_qt</url>
   <releases>
+	  <release version="3.2.0" date="2026-04-03">
+	 	 	 <description>
+        <p>Added</p>
+        <ul>
+          <li>Fiat pricing support for Liquid assets</li>
+          <li>Jade Core integration with improved device connection checks</li>
+          <li>Build scripts and setup instructions for macOS, Linux, and Windows</li>
+          <li>Swap ID display for lockup transactions in Onchain and Submarine swaps</li>
+          <li>Countly analytics events for swaps</li>
+          <li>Added LWK dependency</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>Updated wallet header with improved actions layout</li>
+          <li>Improved Jade device status handling and unlock experience</li>
+          <li>Refactored swap, invoice, and context/limit models for better maintainability</li>
+          <li>Enabled Qt Wayland integration on Linux</li>
+          <li>Updated GDK to 0.77.2</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Coin list refresh after transaction creation</li>
+          <li>URL link handling on macOS</li>
+          <li>Testnet handling in payment parser</li>
+          <li>Cursor consistency on clickable UI elements</li>
+          <li>Notification section visibility when multisig notifications are unavailable</li>
+          <li>Notification toasts with long descriptions</li>
+          <li>Stability improvements in resolver/task error handling and swap sync concurrency</li>
+        </ul>
+       </description>
+	  </release>
 	  <release version="3.1.0" date="2026-03-04">
 	 	 	 <description>
         <p>Added</p>
