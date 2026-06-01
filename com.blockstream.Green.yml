@@ -1,6 +1,6 @@
 app-id: com.blockstream.Green
 runtime: org.kde.Platform
-runtime-version: '6.9'
+runtime-version: '6.10'
 sdk: org.kde.Sdk
 command: blockstream
 rename-desktop-file: blockstream.desktop
@@ -27,7 +27,7 @@ modules:
       - chmod +x Blockstream-x86_64.AppImage
       - ./Blockstream-x86_64.AppImage --appimage-extract
       - cp -a squashfs-root/usr/* ${FLATPAK_DEST}/
-      - install -Dm644 com.blockstream.Green.metainfo.xml ${FLATPAK_DEST}/share/metainfo/com.blockstream.Green.metainfo.xml
+      - install -Dm644 com.blockstream.Green.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
 
     sources:
       - type: file
@@ -42,3 +42,7 @@ modules:
 
       - type: file
         path: com.blockstream.Green.metainfo.xml
+
+      - type: file
+        url: https://raw.githubusercontent.com/Blockstream/green_qt/fe091a9728ee5692c70fecdddcf9d9ac5b955608/LICENSE
+        sha256: c61f12da7cdad526bdcbed47a4c0a603e60dbbfdaf8b66933cd088e9132c303f
