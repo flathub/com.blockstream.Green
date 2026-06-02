@@ -32,6 +32,29 @@
   <url type="homepage">https://blockstream.com/green</url>
   <url type="vcs-browser">https://github.com/blockstream/green_qt</url>
   <releases>
+	  <release version="3.4.0" date="2026-06-02">
+	 	 	 <description>
+        <p>Added</p>
+        <ul>
+          <li>Support for paying BOLT12 offers, LNURL, and BIP353 addresses</li>
+          <li>Swap button on account asset page</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>Updated minimum Jade firmware version to 1.0.40</li>
+          <li>Load swaps in background thread for faster startup</li>
+          <li>Reduce tasks during loading for improved performance</li>
+          <li>Updated GDK to 0.77.4</li>
+          <li>Updated hidapi to 0.15.0</li>
+          <li>Updated libusb to 1.0.29</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Race condition during swap sync</li>
+          <li>Various QML linting issues</li>
+        </ul>
+       </description>
+	  </release>
 	  <release version="3.3.0" date="2026-05-06">
 	 	 	 <description></description>
 	  </release>
