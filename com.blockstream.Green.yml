@@ -31,8 +31,8 @@ modules:
 
     sources:
       - type: file
-        url: https://github.com/Blockstream/green_qt/releases/download/release_3.4.0/Blockstream-x86_64.AppImage
-        sha256: 0d5ae746f85cd4e2f3852ae29242abe481a37b564a914864b4902c352d44f86b
+        url: https://github.com/Blockstream/green_qt/releases/download/release_3.4.1/Blockstream-x86_64.AppImage
+        sha256: f27ddf2f1c25f87479204200bfb64f1097d4703e1587b5a1ad5f0eea089d6a99
         dest-filename: Blockstream-x86_64.AppImage
         x-checker-data:
           type: json
