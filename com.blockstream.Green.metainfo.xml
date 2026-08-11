@@ -32,6 +32,69 @@
   <url type="homepage">https://blockstream.com/green</url>
   <url type="vcs-browser">https://github.com/blockstream/green_qt</url>
   <releases>
+	  <release version="3.5.0" date="2026-08-11">
+	 	 	 <description>
+        <p>Added</p>
+        <ul>
+          <li>Lightning Network support (Beta): enable a Lightning node from wallet settings, with dedicated send and receive pages (mainnet software wallets only, excluding BIP39 wallets)</li>
+          <li>AMP2 accounts, unified with AMP0 accounts in the wallet UI (testnet only)</li>
+          <li>Jade QR Connect for connecting and unlocking Jade over QR codes</li>
+          <li>Airgapped signing with Jade on watch-only wallets</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>Temporarily disabled new swaps (Bitcoin/Liquid, and Liquid Bitcoin via Lightning) due to a service interruption; existing funds are unaffected</li>
+          <li>Migrated crash reporting from Crashpad to sentry-native, and disabled Sentry automatic session tracking</li>
+          <li>macOS disk images now contain only the native architecture</li>
+          <li>Windows wallet libraries are now code signed</li>
+          <li>Updated references from Green to Blockstream across the app and translations</li>
+          <li>Restored legacy multisig nLockTime and recovery email flows</li>
+          <li>Auto select asset and account in the receive flow</li>
+          <li>Updated transaction completed and failed pages</li>
+          <li>Disabled archiving for non-empty accounts and single account wallets</li>
+          <li>Disabled the PIN field when no login attempts remain</li>
+          <li>Show testnet unit labels in amount fields</li>
+          <li>Use the converted fiat currency in the unit menu</li>
+          <li>Supplement existing Jade entropy with additional host entropy</li>
+          <li>Configure builds with CMake presets</li>
+          <li>Updated GDK to 0.77.7</li>
+          <li>Updated LWK to 0.18.3</li>
+          <li>Updated zxing-cpp</li>
+        </ul>
+        <p>Removed</p>
+        <ul>
+          <li>Telegram 2FA</li>
+          <li>Delete wallet dialog</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Total balance fiat conversion on testnet</li>
+          <li>Send flow for BIP21 recipients</li>
+          <li>Balance refresh after payment</li>
+          <li>Focus after switching wallet</li>
+          <li>Lightning payments denominated in millisatoshi</li>
+          <li>Greedy spend amount now read from PSET outputs</li>
+          <li>Jade firmware update offering an already-installed version</li>
+          <li>Jade firmware update prompt while the device state is unsaved</li>
+          <li>Crash on exit when using Tor</li>
+          <li>Crash when Countly is unavailable, with graceful handling of network issues</li>
+        </ul>
+       </description>
+	  </release>
+	  <release version="3.4.1" date="2026-06-17">
+	 	 	 <description>
+        <p>Added</p>
+        <ul>
+          <li>BOLT12 offer description support</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>Updated Qt to 6.11.1</li>
+          <li>Updated GDK to 0.77.6</li>
+          <li>Updated LWK</li>
+        </ul>
+       </description>
+	  </release>
 	  <release version="3.4.0" date="2026-06-02">
 	 	 	 <description>
         <p>Added</p>
