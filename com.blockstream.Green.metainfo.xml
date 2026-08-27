@@ -32,6 +32,24 @@
   <url type="homepage">https://blockstream.com/green</url>
   <url type="vcs-browser">https://github.com/blockstream/green_qt</url>
   <releases>
+	  <release version="3.5.1" date="2026-08-14">
+	 	 	 <description>
+        <p>Changed</p>
+        <ul>
+          <li>Updated sentry-native to 0.16.2</li>
+          <li>Log generic Boltz errors to help diagnose swap failures</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Crash on exit when a wallet is logged in</li>
+          <li>Crashes from the analytics session being released mid request and at shutdown</li>
+          <li>Crashes during Jade login when callbacks outlived their controller</li>
+          <li>Crash when checking Jade firmware with a stale request</li>
+          <li>Crashes from dangling edges in the task graph, and from tasks destroyed by siblings</li>
+          <li>Camera crashes when leaving the QR scanner or when devices are plugged and unplugged</li>
+        </ul>
+       </description>
+	  </release>
 	  <release version="3.5.0" date="2026-08-11">
 	 	 	 <description>
         <p>Added</p>
