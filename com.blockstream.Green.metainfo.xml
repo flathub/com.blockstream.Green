@@ -32,6 +32,50 @@
   <url type="homepage">https://blockstream.com/green</url>
   <url type="vcs-browser">https://github.com/blockstream/green_qt</url>
   <releases>
+	  <release version="3.6.0" date="2026-09-21">
+	 	 	 <description>
+        <p>Added</p>
+        <ul>
+          <li>Pay Lightning addresses and LNURL pay requests from the Lightning send flow</li>
+          <li>Dedicated login progress page, with a status-page link when login takes longer than expected</li>
+          <li>Configurable Electrum server gap limit in app preferences</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>Updated GDK to 0.78.0</li>
+          <li>Redesigned manual coin selection, with a dedicated coin details page</li>
+          <li>Restored 2of2 and 2of3 account creation, with 2of3 limited to Bitcoin</li>
+          <li>Removed account creation from the receive flow</li>
+          <li>Send Liquid asset registry information to Jade when signing</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Lightning send failures reported without a human-readable error</li>
+          <li>Jade login and firmware updates when the device disconnects or has pending requests</li>
+          <li>Heap corruption when GDK fails to convert JSON to a string</li>
+          <li>The app restarting after the UI was terminated on purpose</li>
+          <li>Account balance shown while the account is still loading</li>
+          <li>Restore hanging when mnemonic login fails, and unusable buttons after a restore error</li>
+          <li>Wallet and account creation analytics events</li>
+          <li>Analytics sessions not restarting after analytics consent is enabled</li>
+          <li>Jade HTTP proxy host validation for empty or partially unapproved host lists</li>
+          <li>Improved Jade genuine-check failure handling</li>
+        </ul>
+       </description>
+	  </release>
+	  <release version="3.5.4" date="2026-08-31">
+	 	 	 <description>
+        <p>Changed</p>
+        <ul>
+          <li>Updated Qt to 6.11.2</li>
+          <li>Completed swaps are no longer restored at login</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Stale swap status caused by updates dropped while restoring pending swaps</li>
+        </ul>
+       </description>
+	  </release>
 	  <release version="3.5.3" date="2026-08-27">
 	 	 	 <description>
         <p>Changed</p>
