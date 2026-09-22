@@ -39,6 +39,8 @@ modules:
           url: https://api.github.com/repos/Blockstream/green_qt/releases/latest
           url-query: .assets[] | select(.name=="Blockstream-x86_64.AppImage") | .browser_download_url
           version-query: .tag_name | sub("^release_"; "")
+          release-url-template: https://github.com/Blockstream/green_qt/releases/tag/release_$version
+          is-main-source: true
 
       - type: file
         path: com.blockstream.Green.metainfo.xml
