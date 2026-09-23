@@ -1,0 +1,63 @@
+name: Check for AppImage updates
+
+on:
+  schedule:
+    # Keep near-real-time checks until GitLab repository_dispatch is wired.
+    - cron: '0 * * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [appimage-released]
+
+concurrency:
+  group: flatpak-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'flathub'
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run flatpak-external-data-checker
+        uses: docker://ghcr.io/flathub-infra/flatpak-external-data-checker:latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.FLATHUBBOT_TOKEN }}
+        with:
+          args: --update --edit-only --never-fork com.blockstream.Green.yml
+
+      - name: Sync release notes from upstream CHANGELOG
+        run: python3 .github/scripts/sync-release-notes.py
+
+      - name: Create pull request
+        id: create-pr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.FLATHUBBOT_TOKEN }}
+          commit-message: Update Blockstream AppImage and release notes
+          title: Update Blockstream AppImage and release notes
+          body: |
+            Automated update from upstream `Blockstream/green_qt`.
+
+            - Bumps the AppImage URL/sha via flatpak-external-data-checker
+            - Syncs AppStream release notes from upstream `CHANGELOG.md`
+          branch: update-appimage
+          delete-branch: true
+          sign-commits: false
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+
+      - name: Wait for pull request to be ready
+        if: steps.create-pr.outputs.pull-request-number
+        run: sleep 30
+
+      - name: Enable auto-merge
+        if: steps.create-pr.outputs.pull-request-number
+        env:
+          GH_TOKEN: ${{ secrets.FLATHUBBOT_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: gh pr merge --merge --auto "${{ steps.create-pr.outputs.pull-request-number }}"
