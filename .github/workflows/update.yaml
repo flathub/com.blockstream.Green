@@ -26,7 +26,7 @@ jobs:
       - name: Run flatpak-external-data-checker
         uses: docker://ghcr.io/flathub-infra/flatpak-external-data-checker:latest
         env:
-          GITHUB_TOKEN: ${{ secrets.FLATHUBBOT_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
         with:
           args: --update --edit-only --never-fork com.blockstream.Green.yml
 
@@ -37,7 +37,7 @@ jobs:
         id: create-pr
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.FLATHUBBOT_TOKEN }}
+          token: ${{ github.token }}
           commit-message: Update Blockstream AppImage and release notes
           title: Update Blockstream AppImage and release notes
           body: |
@@ -58,6 +58,6 @@ jobs:
       - name: Enable auto-merge
         if: steps.create-pr.outputs.pull-request-number
         env:
-          GH_TOKEN: ${{ secrets.FLATHUBBOT_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: gh pr merge --merge --auto "${{ steps.create-pr.outputs.pull-request-number }}"
