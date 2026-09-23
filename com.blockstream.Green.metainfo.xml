@@ -33,7 +33,8 @@
   <url type="vcs-browser">https://github.com/blockstream/green_qt</url>
   <releases>
 	  <release version="3.6.0" date="2026-09-21">
-	 	 	 <description>
+	    <url type="details">https://github.com/Blockstream/green_qt/releases/tag/release_3.6.0</url>
+	    <description>
         <p>Added</p>
         <ul>
           <li>Pay Lightning addresses and LNURL pay requests from the Lightning send flow</li>
