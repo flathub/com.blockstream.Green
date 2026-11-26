@@ -32,6 +32,46 @@
   <url type="homepage">https://blockstream.com/green</url>
   <url type="vcs-browser">https://github.com/blockstream/green_qt</url>
   <releases>
+	  <release version="3.7.0" date="2026-11-26">
+	    <url type="details">https://github.com/Blockstream/green_qt/releases/tag/release_3.7.0</url>
+	    <description>
+        <p>Added</p>
+        <ul>
+          <li>Connect Jade over Bluetooth on Windows, macOS and Linux, with pairing from the app</li>
+          <li>Pick a Jade and its USB or Bluetooth connection, and reconnect a turned-off Jade from the wallet card</li>
+          <li>Remove wallet option in the wallet menu</li>
+          <li>AMP2 account renaming and archiving</li>
+          <li>Ledger transaction review pages when signing</li>
+          <li>Jade PIN status in the device details</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>Updated GDK to 0.78.2</li>
+          <li>Updated Qt to 6.12.0</li>
+          <li>New Blockstream logo, app icons, installer artwork and recovery phrase backup template</li>
+          <li>Jade Plus and Core units that fail the genuine check are blocked, with retry on failure</li>
+          <li>Promotions shown in a carousel</li>
+          <li>Wallet data redacted from logs shared with support</li>
+          <li>Reduced how long mnemonics and passphrases are kept in memory</li>
+          <li>Transaction CSV exports use UTC timestamps and include UTC offset, account ID and asset ID</li>
+          <li>Lightning service capacity is checked before enabling Lightning</li>
+          <li>Animated QR scans are limited in size and duration, with retry</li>
+          <li>In-app update notifications disabled on Flatpak</li>
+          <li>Updated minimum Jade firmware version to 1.0.42</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Missing Liquid asset details after login, new transactions or wallet refresh</li>
+          <li>Long asset names overflowing in the account and asset field</li>
+          <li>Returning to the update flow when a Jade firmware update fails</li>
+          <li>Close button in the backup QR code view</li>
+          <li>Archiving the last account of a network when the wallet has accounts on other networks</li>
+          <li>Crash when scanning an invalid transaction QR code</li>
+          <li>PIN change no longer offered in BIP39 passphrase sessions</li>
+          <li>Transaction and address CSV exports quote every field</li>
+        </ul>
+       </description>
+	  </release>
 	  <release version="3.6.1" date="2026-11-04">
 	    <url type="details">https://github.com/Blockstream/green_qt/releases/tag/release_3.6.1</url>
 	    <description>
